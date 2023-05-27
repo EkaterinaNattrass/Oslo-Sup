@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Oslo Sup Blog | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c2f32b1a72.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for Oslo Sup -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3501047,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<body class="blog">
+    <header>
+        <nav>
+            <a href="home.html"><img src="images/oslo-sup.png"
+                    alt="logo of the blog: a sup and a paddle and title Oslo SUP" id="logo"></a>
+            <a href="about.html" class="blog-nav">ABOUT</a>
+            <a href="blog.html" class="blog-nav">BLOG</a>
+            <a href="contacts.html" class="blog-nav">CONTACTS</a>
+        </nav>
+    </header>
+    <main>
+        <div class="blog-container">
+            <div class="filter">
+                <h2>TAGS</h2>
+                <button id="places" onclick="filterPosts(8)">Places</button>
+                <button id="equipment" onclick="filterPosts(7)">Equipment</button>
+                <button id="tips" onclick="filterPosts(3)">Tips</button>
+                <button id="beginner" onclick="filterPosts(6)">Beginner</button>
+                <button id="advanced" onclick="filterPosts(5)">Advanced</button>
+                <button id="shops" onclick="filterPosts(13)">Shops</button>
+            </div>
+            <div class="blog-results">
+                <div class="posts-container"></div>
+                <button class="more-posts" id="more-posts">MORE POSTS</button>
+            </div>
+        </div>
+        <a href="#" class="to-top" aria-label="button up">
+            <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </a>
+    </main>
+    <script src="js/blog.js"></script>
+</body>

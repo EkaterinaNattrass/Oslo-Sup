@@ -1,0 +1,509 @@
+
+/*          GLOBAL           */
+
+:root {
+    --page-colour: rgb(4, 47, 64);
+    --arrow-background: rgba(4, 47, 64, 0.55);
+    --logo-colour: #9AD9C7;
+    --posts-color: rgb(217, 217, 217);
+}
+
+* {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+.to-top {
+    background-color: var(--arrow-background);
+    color: white;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px
+}
+
+button {
+    font-size: 20px;
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*          HEADER          */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    border-bottom: white 1px solid;
+}
+.about nav, .blog nav, .post nav, .contacts nav {
+    height: 90px;
+}
+nav a {
+    color: white;
+    font-size: 20px;
+    align-self: center;
+}
+#logo {
+    width: 100px;
+}
+
+/*          HOME            */
+
+.home-nav, .home-h1, .slogan  {
+    background-color: var(--arrow-background);
+}
+h1, .slogan {
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+.main {
+    background-image: url(images/kaan-kosemen-8wO56xoVb6s-unsplash.jpg);
+}
+.posts {
+    background-image: url(images/emile-pKT3ZGYiZzY-unsplash.jpg);
+}
+.social {
+    background-image: url(images/valentyn-kotelnikov-cSWmoz-LWvE-unsplash.jpg);
+}
+.main, .posts, .social {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.learn-more {
+    border: solid 1px white;
+    color: white;
+    background-color: var(--arrow-background);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -100px;
+}
+.learn-more:hover {
+    box-shadow: 0 12px 16px 0 rgb(217, 217, 217, 65%);
+}
+.carousel { 
+    position: relative;
+    width: 75%;
+    height: 500px;
+    padding: 30px;
+}
+.latest-posts {
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+#prev, #next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 20px;
+}
+#prev {
+    left: 2rem;
+}
+#next {
+    right: 2rem;
+}
+.no-display {
+    display: none;
+}
+.read-more, .subscribe, .more-posts, .filter button, .submit {
+    border: solid 1px black; 
+}
+.read-more a {
+    color: black;
+}
+.read-more:hover, .subscribe:hover, .more-posts:hover, .filter button:hover, .carousel i:hover, .submit:hover {
+   box-shadow: 0 12px 16px 0 rgb(4, 47, 64, 65%);
+}
+.social, .posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.subscription, .carousel, .instagram, .filter, .form-container, .post-container, .comments, .text-post, .about-text {
+    background-color:rgb(217, 217, 217, 95%);
+}
+.subscription, .instagram {
+    padding: 40px;
+}
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email-label, .subscribe {
+    margin-top: 20px;
+}
+#email {
+    width: 200px;
+    height: 30px;
+}
+.instagram {
+    width: 300px;
+}
+.instagram-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.instagram img {
+    width: 100px;
+    height: 150px;
+}
+
+/*          ABOUT            */
+
+.about {
+    background-image: url(images/drew-dau-EFb0P8NbGaU-unsplash.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-h1, .about-nav {
+    background-color: rgb(3, 140, 115, 50%);
+}
+.about-text {
+    width: 400px;
+    font-size: 20px;
+    padding: 50px;
+    height: fit-content;
+    margin: 100px 0 100px 100px;
+}
+span {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+/*          BLOG             */
+
+.blog, .post {
+    background-image: url(original_images/jeremy-bishop-7JPerNWjEAE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blog-nav {
+    background-color: rgb(0, 83, 107, 50%);
+}
+.blog-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.filter {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 50px;
+}
+.filter button {
+    font-size: 15px;
+    margin: 10px;
+}
+.blog-results {
+      width: 60%;
+}
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.post-container {
+    margin-top: 50px;
+    padding: 40px;
+}
+.excerpt {
+    font-size: 25px ;
+}
+.date {
+    font-size: 13px;
+}
+.img {
+    width: 150px;
+}
+.excerpt, .date, .img {
+    margin: 10px;
+}
+.read-more {
+    margin-top: 20px;
+}
+.more-posts {
+    position: relative;
+    left: 50%;
+    background-color: var(--posts-color);
+    margin: 50px 0 50px -100px;
+}
+
+/*          CONTACTS             */
+
+.contacts {
+    background-image: url(original_images/husen-siraaj-lWxavMfS6SA-unsplash.jpg);
+    background-size: cover;
+    background-position: 30% 50%;
+    background-attachment: fixed;
+}
+.contacts-nav, .contacts-h1 {
+    background-color: rgba(0, 122, 143, 50%);
+}
+.contacts-page, .form {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-page {
+    align-items: center;
+}
+.form-container {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 50px;
+}
+#name, #email, #subject, #message {
+    margin: 10px;
+    padding: 10px;
+}
+#message {
+    width: 400px;
+    height: 128px;
+}
+#name-error, #email-error, #subject-error, #message-error {
+    color: #EB0343;
+    font-size: 15px;
+    display: none;
+}
+.submit {
+    margin-top: 50px;
+    align-self: center;
+}
+.thank-message {
+    text-align: center;
+    background-color: var(--posts-color);
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+/*          POST             */
+
+.post-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-post, .text-post, .comments {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+}
+.image-post img { 
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-post img:hover {
+    opacity: 0.7;
+}
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1 ;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-image {
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-post {
+    padding: 50px;
+}
+.text-post h1 {
+    color: black;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+@media (max-width: 920px) {
+  
+    .social {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel {
+        height: 550px;
+    }
+    .latest-posts {
+        top: 50%;
+        font-size: 15px;
+        width: 70%;
+    }
+    .image-post, .text-post, .comments {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .text-post h1, .text-post div {
+        padding: 20px; 
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #name, #email, #subject {
+    width: 400px;
+    }
+}
+
+@media (max-width: 540px) {
+    nav a {
+        font-size: 15px;
+    }
+    h1, .slogan {
+        font-size: 25px;
+    }
+    .social {
+        height:fit-content;
+        padding: 50px 0 50px 0;
+    }
+    .carousel, .subscription, .instagram {
+        width: 200px;
+    }
+    .latest-posts {
+        font-size: 12px;
+        top: 55%;
+    }
+    #prev {
+        left: 1rem;
+    }
+    #next {
+        right: 1rem;
+    }
+    .read-more {
+        font-size: 15px;
+        width: 150px;   
+        padding: 5px 10px;
+        display: inline-block;
+    }
+    .subscription {
+        margin-bottom: 50px;
+    }
+    .instagram img {
+        width: 60px;
+        height: 85px;
+    }
+    .to-top {
+        display: none;
+    }
+    .about-text {
+        width: 200px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 50px 0px 50px 15px;
+    }
+    span {
+        font-size: 17px;
+    }
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .filter h2  {
+        display: none;
+    }
+    #places, #equipment, #tips, #beginner, #advanced, #shops {
+        background-color: var(--posts-color);
+        width: 120px;
+       padding: 5px;
+    }
+    .blog-results {
+        width: 100%;
+    }
+    .posts-container {
+        padding: 0;
+    }
+    .excerpt {
+        font-size: 15px ;
+    }
+    .post-container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .form-container {
+        width: 75%;
+    }
+    #name, #email, #subject, #message {
+        width: 200px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 300px) {
+    nav a {
+        font-size: 10px;
+    }
+    h1, .slogan {
+        font-size: 15px;
+    }
+    .subscription {
+        width: 150px;
+    }
+    .instagram {
+        width: 150px;
+    }
+    .instagram img {
+        width: 70px;
+        height: 95px;
+    }
+}
