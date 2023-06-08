@@ -25,6 +25,7 @@ The project was built with:
 - HTML 5
 - CSS
 - Javascript
+- WordPress
 
 ## Getting started
 
@@ -32,11 +33,11 @@ The project was built with:
 
 1. Clone the repo:
 
-`ggit@github.com:EkaterinaNattrass/Oslo-Sup.git`
+`git@github.com:EkaterinaNattrass/Oslo-Sup.git`
 
 ### Running
 
-The project contains only static files, you can find the index page at `public/home.html`
+The project contains only static files, you can find the index page at `public/home.html`. WordPress is used as a Content Management System, hosted at [one.com](www.one.com) and calls to the API are made within the client side code. Therefore you will also need an active internet connection.
 
 ### Contributing
 
